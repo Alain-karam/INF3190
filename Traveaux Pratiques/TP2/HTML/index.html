@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Home</title>
+    <title>Soumissions d'assurance auto</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/styles.css">
 </head>
 <body>
+    <h1>Soumissions d'assurance auto</h1>
+    
+    <form id="insuranceForm">
+        <label for="gender">Quel est votre genre?</label>
+        <select id="gender" required>
+            <option value="">Sélectionnez</option>
+            <option value="female">Femme</option>
+            <option value="male">Homme</option>
+            <option value="non-binary">Non-binaire</option>
+        </select>
 
-    <h1>Home</h1>
-    <p>Home page content goes here.</p>
+        <label for="age">Quel est votre âge?</label>
+        <input type="number" id="age" required>
+
+        <label for="vehicleValue">Quelle est la valeur d'achat de votre véhicule?</label>
+        <input type="number" id="vehicleValue" required>
+
+        <label for="vehicleYear">Quelle est l'année de fabrication de votre véhicule?</label>
+        <input type="number" id="vehicleYear" required>
+
+        <label for="claims">Avez-vous fait des réclamations d'assurance auto dans les 6 dernières années?</label>
+        <select id="claims" required>
+            <option value="">Sélectionnez</option>
+            <option value="yes">Oui</option>
+            <option value="no">Non</option>
+        </select>
+
+        <div id="claimQuestions" style="display: none;">
+            <label for="numClaims">Combien de réclamations avez-vous faites?</label>
+            <input type="number" id="numClaims">
+
+            <div id="claimAmounts"></div>
+        </div>
+        
+        <button type="submit">Obtenir une soumission</button>
+    </form>
+
+    <div id="result" style="display: none;">
+        <h2>Résultat de la soumission</h2>
+        <p id="quote"></p>
+        <p id="monthlyAmount"></p>
+    </div>
+
+    <script src="../JS/scipt.js"></script>
 </body>
 </html>
