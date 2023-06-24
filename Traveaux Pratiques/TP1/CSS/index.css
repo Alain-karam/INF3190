@@ -1,0 +1,36 @@
+
+
+body {
+    background-image: url('../Pictures/Backgrounds/skyBackground.jpg');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#Logo {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo {
+    margin: 0 20px;
+}
+
+#ArtsLogo {
+    width: 25px;
+}
+
+#SciencesLogo {
+    width: 100px;
+}

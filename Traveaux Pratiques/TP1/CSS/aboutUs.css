@@ -1,0 +1,100 @@
+body {
+  background-image: url('../Pictures/Backgrounds/blurredGalaxyBackground.png');
+  background-attachment: fixed;
+  color: white;
+  font-family: SF Pro Display, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+}
+
+.navbar a {
+  color: white;
+  float: right;
+  display: block;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #1c0a38;
+}
+
+.navbar img {
+  float: left;
+  padding: 10px;
+  height: 50px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+#titre {
+  font-size: 200px;
+  text-align: center;
+}
+
+#intro1,
+#intro2,
+#intro3,
+#intro4 {
+  flex-basis: 100%;
+  max-width: 50%;
+  position: absolute;
+  margin: 75px;
+  font-size: 50px;
+}
+
+#intro1,
+#intro3 {
+  text-align: left;
+  left: 0px;
+}
+#intro2,
+#intro4 {
+  text-align: right;
+  right: 0px;
+
+}
+
+#img1,
+#img2,
+#img3,
+#img4 {
+  flex-basis: 100%;
+  max-width: 50%;
+  height: auto;
+  position: absolute;
+  margin: 75px;
+}
+
+#img1,
+#img3 {
+  right: 0px;
+}
+#img2,
+#img4 {
+  left: 0px;
+}
+
+#intro1,
+#img1 {
+  top: 1000px;
+}
+#intro2,
+#img2 {
+  top: 2000px;
+}
+#intro3,
+#img3 {
+  top: 3000px;
+}
+#intro4,
+#img4 {
+  top: 4000px;
+}
