@@ -1,1 +1,1 @@
-document.getElementById('claims').addEventListener  
+ 

@@ -1,0 +1,16 @@
+#counter {
+    display: block;
+    text-align: center;
+    font-size: 50px;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #005003;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
