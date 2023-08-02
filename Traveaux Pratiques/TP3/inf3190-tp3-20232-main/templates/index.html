@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adoption d'animaux de compagnie</title>
+</head>
+<body>
+    <h1>Adoption d'animaux de compagnie</h1>
+    <h2>Animaux disponibles au hasard :</h2>
+    <ul>
+        {% for animal in animaux %}
+        <li>
+            <a href="{{ url_for('animal', animal_id=animal.id) }}">{{ animal.nom }}</a> - {{ animal.espece }} ({{ animal.race }})
+        </li>
+        {% endfor %}
+    </ul>
+    <p><a href="{{ url_for('search_animals') }}">Rechercher un animal</a></p>
+    <p><a href="{{ url_for('adoption_form') }}">Mettre un animal en adoption</a></p>
+</body>
+</html>

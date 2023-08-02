@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Résultats de recherche</title>
+</head>
+<body>
+    <h1>Résultats de recherche</h1>
+    <ul>
+        {% for animal in search_results %}
+        <li>
+            <a href="{{ url_for('animal', animal_id=animal.id) }}">{{ animal.nom }}</a> - {{ animal.espece }} ({{ animal.race }})
+        </li>
+        {% endfor %}
+    </ul>
+    <p><a href="{{ url_for('index') }}">Retour à la liste des animaux</a></p>
+</body>
+</html>

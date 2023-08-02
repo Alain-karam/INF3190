@@ -33,7 +33,7 @@ button {
 }
 
 .erreur {
-    color: rgb(87, 8, 8);
+    color: rgb(230, 193, 193);
     font-style: italic;
     font-size: small;
 }

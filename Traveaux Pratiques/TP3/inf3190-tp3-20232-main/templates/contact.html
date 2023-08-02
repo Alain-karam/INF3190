@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contactez le propriétaire</title>
+</head>
+<body>
+    <h1>Contactez le propriétaire</h1>
+    <form action="{{ url_for('send_email', animal_id=animal.id, owner_email=animal.courriel) }}" method="post">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea><br>
+
+        <input type="submit" value="Envoyer">
+    </form>
+</body>
+</html>

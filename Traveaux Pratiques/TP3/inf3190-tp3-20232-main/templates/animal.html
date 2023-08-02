@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Détails de l'animal</title>
+</head>
+<body>
+    <h1>Détails de l'animal</h1>
+    <ul>
+        <li><strong>Nom:</strong> {{ animal.nom }}</li>
+        <li><strong>Espèce:</strong> {{ animal.espece }}</li>
+        <li><strong>Race:</strong> {{ animal.race }}</li>
+        <li><strong>Âge:</strong> {{ animal.age }} ans</li>
+        <li><strong>Description:</strong> {{ animal.description }}</li>
+        <li><strong>Email du propriétaire:</strong> {{ animal.courriel }}</li>
+        <li><strong>Adresse de récupération:</strong> {{ animal.adresse }}</li>
+        <li><strong>Ville:</strong> {{ animal.ville }}</li>
+        <li><strong>Code postal:</strong> {{ animal.cp }}</li>
+    </ul>
+    <p><a href="{{ url_for('contact', animal_id=animal.id) }}">Exprimer mon intérêt pour l'adoption</a></p>
+    <p><a href="{{ url_for('index') }}">Retour à la liste des animaux</a></p>
+</body>
+</html>
